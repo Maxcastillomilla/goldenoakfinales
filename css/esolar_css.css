@@ -426,7 +426,7 @@
  #image{
    
     
-    background-image: url(/imagenes/esportada.jpg);   
+    background-image: url(../imagenes/esportada.jpg);   
     background-position: center;
 
     /*  background-position-y: -330px ; */
