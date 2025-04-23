@@ -73,7 +73,7 @@
  #image{
    
     
-    background-image: url(/imagenes/fondonosotros.png);   
+    background-image: url(../imagenes/fondonosotros.png);   
     background-position: center;
 
     /*  background-position-y: -330px ; */
@@ -139,7 +139,7 @@
 }
 
 #imgsl1{
-   background-image: url(/imagenes/control1.JPG);
+   background-image: url(../imagenes/control1.JPG);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 60%;
@@ -149,7 +149,7 @@
 #imgsl2{
 
    
-   background-image: url(/imagenes/control2.png);
+   background-image: url(../imagenes/control2.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
@@ -159,7 +159,7 @@
 #imgsl3{
 
    
-   background-image: url(/imagenes/control3.png);
+   background-image: url(../imagenes/control3.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 65%;
