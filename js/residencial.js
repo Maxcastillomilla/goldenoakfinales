@@ -1,0 +1,1 @@
+document.getElementById("rd4").checked = true;

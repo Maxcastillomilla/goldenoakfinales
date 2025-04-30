@@ -2748,6 +2748,12 @@ right: calc(100px + 2vw + 5px) ;
 }
 
 #clientesform{
+    
+    grid-column-start: 2;
+    grid-column-end: 8;
+
+
+
     display: grid;;
     background-color: #63c2e4;
     /* height: 500px; */
@@ -2971,16 +2977,17 @@ padding-top: 10px;
         position: relative;
         top: 11px; 
         font-size: 10px;
-        width: 110vw;
+        
         min-width: 100vw;
+        padding-bottom: 20px;
         
         
 
     }
 
-    #opmenu{
+   /*  #opmenu{
         width: 110vw;
-    }
+    } */
     
  
     
@@ -3168,6 +3175,8 @@ padding-top: 10px;
     grid-column-end: 10;
 
     }
+
+    
 
     #imagenvisita{
         display: none;
@@ -3388,6 +3397,14 @@ padding: 3.5em 1.5em;
 padding-top: 10px;
 
 } 
+
+
+
+.formcliente{
+    
+    grid-column-start: 2 ;
+    grid-column-end: 6 ;
+}
 
 
 
