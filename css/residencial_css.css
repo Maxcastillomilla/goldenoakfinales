@@ -577,11 +577,7 @@
 
 
 
-@media screen and (max-width: 960px) {
 
-
-
-}
 
 .y.mandatory-scroll-snapping {
    scroll-snap-type: y mandatory;
@@ -621,4 +617,19 @@ div > div {
 
 .normal-stop > div {
   scroll-snap-stop: normal;
+}
+
+@media screen and (max-width: 960px) {
+
+
+   @media screen and (max-width: 960px) {
+
+      #verticalmenu{
+         margin-top: 9.5vh;
+         margin-left: 5px;
+       }
+   
+   
+   
+   }
 }

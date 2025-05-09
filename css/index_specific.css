@@ -1,0 +1,469 @@
+/* This CSS file contains styles specific to the index.html page. */
+
+/* Source: css/style.css */
+.texto {
+  position: relative;
+}
+
+/* Source: css/style.css */
+.pr {
+  position: relative;
+}
+
+/* Source: css/style.css */
+.mid {
+  width: fit-content;
+  text-align: center;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Source: css/style.css */
+.tituloi {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Source: css/style.css */
+.titulod {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Source: css/style.css */
+.achicar {
+  font-size: 3rem;
+}
+
+/* Source: css/style.css */
+.botoni {
+  color: black;
+  border: 2px solid black;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+/* Source: css/style.css */
+.botond {
+  color: white;
+  border: 2px solid white;
+  border-radius: 25px;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-decoration: none;
+}
+
+/* Source: css/style.css */
+.margen {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* Source: css/style.css */
+.d {
+  display: flex;
+  width: 100%;
+}
+
+/* Source: css/style.css */
+.contenedor {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Source: css/style.css */
+#piepag {
+  width: 100%;
+  height: 95px;
+  background-color: #bbe1ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Source: css/style.css */
+.piepagina {
+  font-size: 1rem;
+  font-weight: lighter;
+  margin-left: 3%;
+  text-align: center;
+}
+
+/* Source: css/style.css */
+.cabecera {
+  height: 750px;
+  width: 100%;
+}
+
+/* Source: css/style.css */
+.imagenbackgraund {
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+
+/* Source: css/style.css */
+.parallax {
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+/* Source: css/style.css */
+.i1 {
+  background-image: url(../imagenes/esportada.jpg);
+}
+
+/* Source: css/style.css */
+.i2 {
+  background-image: url(../imagenes/multilogos.png);
+}
+
+/* Source: css/style.css */
+.i3 {
+  background-image: url(../imagenes/campo.jpg);
+}
+
+/* Source: css/style.css */
+.i4 {
+  background-image: url(../imagenes/casa.jpg);
+}
+
+/* Source: css/style.css */
+.i5 {
+  background-image: url(../imagenes/operacion.jpg);
+}
+
+/* Source: css/style.css */
+.flip {
+  transform: scaleX(-1);
+}
+
+/* Source: css/style.css */
+.textoiconos {
+  text-align: center;
+  width: 90%;
+}
+
+/* Source: css/style.css */
+.logocliente {
+  filter: grayscale(100%);
+  width: 11%;
+  margin-left: 2%;
+  margin-right: 2%;
+  opacity: 0.6;
+}
+
+/* Source: css/style.css */
+.logocliente2 {
+  filter: grayscale(100%);
+  width: 13%;
+  margin-left: 2%;
+  margin-right: 2%;
+  opacity: 0.6;
+}
+
+/* Source: css/style.css */
+.conttitulo {
+  font-size: 0.9rem;
+}
+
+/* Source: css/style.css */
+.contcont {
+  font-size: 0.9rem;
+  font-weight: lighter;
+}
+
+/* Source: css/style.css */
+.lasredes {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Source: css/style.css */
+.textcenter3 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 5px;
+}
+
+/* Source: css/style.css */
+.textcenter4 {
+  text-align: center;
+  font-size: 2rem;
+  padding-top: 5px;
+}
+
+/* Source: css/style.css */
+#lastsec {
+  background-color: #bbe1ea;
+  width: 100%;
+  justify-content: space-around;
+}
+
+/* Source: css/style.css */
+.centrosvg {
+  width: 80%;
+  height: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Source: css/style.css */
+.chile {
+  width: 60%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+/* Source: css/style.css */
+#megaline {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 100%;
+  z-index: 1;
+}
+
+/* Source: css/style.css */
+#flecha {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0px;
+}
+
+/* Source: css/style.css */
+.arrow {
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 5px;
+}
+
+/* Source: css/style.css */
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+/* Source: css/style.css */
+.fade2 {
+  opacity: 0.7;
+}
+
+/* Source: css/style.css */
+.fade {
+  opacity: 0;
+  transition: opacity 2s;
+}
+
+/* Source: css/style.css */
+#contendoriconos {
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+/* Source: css/style.css */
+#subcli {
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+/* Source: css/style.css */
+#lastcircle {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: white;
+  z-index: 0;
+}
+
+/* Source: css/style.css */
+.circle {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Source: css/style.css */
+.circle2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Source: css/style.css */
+.textcenter2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Source: css/style.css */
+.textcenter7 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Source: css/style.css */
+#last1 {
+  position: absolute;
+  left: 10%;
+  width: 17%;
+  height: 77%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Source: css/style.css */
+#last2 {
+  position: absolute;
+  right: 10%;
+  width: 13%;
+  height: 77%;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Source: css/style.css */
+#redes2 {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Source: css/style.css */
+#logotime {
+  width: 11%;
+  opacity: 0.7;
+}
+
+/* Source: css/style.css */
+#logotime2 {
+  width: 13%;
+  opacity: 0.7;
+}
+
+/* Source: css/style.css */
+.tituloceleste {
+  color: #bbe1ea;
+  font-size: 4rem;
+}
+
+/* Source: css/style.css */
+.slii {
+  line-height: 0.9;
+}
+
+/* Source: css/style.css */
+.slid {
+  line-height: 0.9;
+}
+
+/* Source: css/style.css */
+.linehl1 {
+  width: 100%;
+  border-bottom: solid 2px #bbe1ea;
+  text-align: right;
+}
+
+/* Source: css/style.css */
+.linehl2 {
+  width: 100%;
+  border-bottom: solid 2px #bbe1ea;
+  text-align: right;
+}
+
+/* Source: css/style.css */
+.linehl3 {
+  width: 100%;
+  border-bottom: solid 2px #bbe1ea;
+  text-align: right;
+}
+
+/* Source: css/style.css */
+.subr2 {
+  text-decoration: none;
+  color: white;
+}
+
+/* Source: css/style.css */
+.subr3 {
+  text-decoration: none;
+  color: white;
+}
+
+/* Source: css/style.css */
+.subr4 {
+  text-decoration: none;
+  color: white;
+}
+
+/* Source: css/style.css */
+.subr5 {
+  text-decoration: none;
+  color: white;
+}
+
+/* Source: css/style.css */
+.subr6 {
+  text-decoration: none;
+  color: white;
+}
+
+/* Source: css/style.css */
+.subr7 {
+  text-decoration: none;
+  color: white;
+}
+
+/* Source: css/style.css */
+.subr8 {
+  text-decoration: none;
+  color: white;
+}
+
+/* Source: css/style.css */
+.fgris {
+  color: gray;
+}
+
+/* Source: css/style.css */
+.counter {
+  font-size: 3rem;
+  color: #bbe1ea;
+}
+
+/* Source: css/style.css */
+.lideressvg {
+  width: 5%;
+  min-width: 60px;
+}

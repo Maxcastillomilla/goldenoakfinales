@@ -20,8 +20,8 @@
 .textocuadro{
    text-align: left;
    line-height: 1rem;
-   font-size: 0.75rem;
-
+   font-size: 0.80em;
+   font-weight: 500 !important;
    animation: fadeInAnimation ease 3s;
     
     animation-fill-mode: forwards;

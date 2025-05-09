@@ -480,8 +480,7 @@ body{
 
       text-align: center;
 
-      
-
+    
       
 }
 
@@ -552,6 +551,8 @@ body{
     margin: 0;
     padding: 0;
     float:left;
+    margin-left: 6px;
+    margin-right: 6px;
 }
 #nav ul li a {
     
@@ -566,9 +567,9 @@ body{
     
     
   display: inline-block;
-  min-width: 130px;
+  min-width: 150px;
 
-  max-width: 130px;
+  /* max-width: 130px; */
   
 }
 
@@ -689,7 +690,7 @@ z-index: 99;
 
 #fondomovil {
     height: 40px; 
-    width: 133px; 
+    width: 160px; 
     position: absolute; 
     background-color: #c6c6c64e; 
     opacity: 0.5;
@@ -755,11 +756,14 @@ animation-name: moveback;
 
 
 
+
+
+
 #contacta{
     position: fixed;
     right: 25px;
     list-style-type: none;
-    /* color: ; */
+
     margin-top: 35px;
     z-index:50;
     -webkit-transform: translate3d(0,0,50px);
@@ -770,9 +774,33 @@ animation-name: moveback;
     
 }
 
+#conecta{
+    position: fixed;
+    display: inline-flex;
+    align-items: center;     /* centra verticalmente texto e imagen */
+    padding: 10px 0;         /* en lugar de margenes que no aplican */
+    margin-left: 20px;
+    max-width: 200px !important;
+    display: none;
+    
+   
+  }
+
+    
+  #contactIcon {
+    display: inline-block;
+    vertical-align: middle;  /* alinea con la línea de texto */
+    margin-left: 8px;
+    filter: invert(1);
+    min-width: 15px !important;
+    /* opcional: define tamaño:
+    width: 1em;
+    height: 1em;
+    */
+  }
 
 .borde a{
-    border: 2px solid #63c2e4;
+    border: 2px solid #ffffff;
     border-radius: 10px;
 
    
@@ -1016,7 +1044,7 @@ animation-name: moveback;
     /* left: 50px; */
     /* referente al padre que este tiene */
     background-color: #63c2e4;
-    min-width: 160px;
+    min-width: 170px;
     max-height: 0;
     overflow: hidden;
     /* border-bottom-right-radius: 25px;  */  
@@ -1029,7 +1057,7 @@ animation-name: moveback;
 
 .dropdown-content a{
    /*  vertical y el otro horizontal */
-    padding: 12px 16px;
+    padding: 12px 10px;
     color: white;
     text-decoration: none;
     display: block;
@@ -1550,39 +1578,7 @@ animation-name: moveback;
 }
 
 
-.titulomedio{
-    text-transform: uppercase;
-    color: white;
-    font-size: 1.3em;
-    
-    margin: 0;
-    position: relative;
-   /*  padding: AUTO; */
-    
-    
-    text-align: center;
 
-    left:calc(-50% - 1px );
-    width: 100%;
-}
-
-
-
-.titulomedio2{
-    text-transform: none;
-    color: white;
-    font-size: 0.75em;
-    
-    margin: 0;
-    position: relative;
-    padding: AUTO;
-    
-    
-    text-align: center;
-
-    left:calc(-62.5% - 1px );
-    width: 125%;
-}
 
 
 .tituloceleste{
@@ -1751,6 +1747,7 @@ animation-name: moveback;
 .mid{
     position: absolute;
     left:calc(50%); 
+    padding-top: 235px
 }
 
 .iz{
@@ -2749,8 +2746,8 @@ right: calc(100px + 2vw + 5px) ;
 
 #clientesform{
     
-    grid-column-start: 2;
-    grid-column-end: 8;
+    grid-column-start: 3;
+    grid-column-end: 7;
 
 
 
@@ -2967,15 +2964,17 @@ padding-top: 10px;
 
 
 @media screen and (max-width: 960px) {
-
+    .mid{
+        padding-top: 135px
+    }
   
 
 
     #nav2{
         
 
-        position: relative;
-        top: 11px; 
+        position: absolute;
+        top: 35vh; 
         font-size: 10px;
         
         min-width: 100vw;
@@ -3112,14 +3111,56 @@ padding-top: 10px;
     #contacta{
         display: none;
     }
-
     #lideres2{
+        margin: 0;
+        grid-column: 1 !important;
+      grid-row: 4 !important;
+      grid-template-columns: auto;
+      padding-bottom: 100px;
+
+
+      /* display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(20px, 1fr) ); */
+      /* gap: 20px; */
+      /* padding: auto; */
+        /* font-size: 7.3px; */
+    }
+    .textcenter7{
+        padding-top: 50px;
+    }
+    #cuadrolideres{
+        height: 840px !important;
+    }
+
+    #S-empresas{
+        margin-top: 840px !important;
+    }
+
+    .circle2{
+        top: 4240px;
+    }
+
+    .lideres{
+        grid-column: 1fr !important;
+      grid-row: 2 !important;
+      grid-template-columns: 100% !important;
+      /* display: grid;
+      grid-template-columns: repeat( auto-fit, minmax(20px, 1fr) ); */
+      /* gap: 20px; */
+      /* padding: auto; */
         font-size: 7.3px;
+    }
+    #lideres2 div{
+        width: 100%;
+    }
+
+    #lideres2 span{
+        font-size: 1.5em;
     }
 
 
     .lideressvg{
-        width: 70%;
+        width: 33%;
         padding: auto;
     }
 
@@ -3347,11 +3388,7 @@ z-index: 25;
     font-size: 1.8em;
 }
 
-.titulomedio2{
-    font-size: 0.60em;
-    max-width: 80vw;
-    margin-left: 50px;
-}
+
 
 
 .fade{
@@ -3464,4 +3501,36 @@ padding-top: 10px;
 
 
 
+
+
+
+  /* Chrome, Safari, Opera */
+.inputblanco input::-webkit-input-placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  /* Firefox 19+ */
+  .inputblanco input::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  /* Firefox 4 – 18 */
+  .inputblanco input:-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  /* Internet Explorer 10+ */
+  .inputblanco input:-ms-input-placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
+  
+  /* Estándar moderno */
+  .inputblanco input::placeholder {
+    color: #ffffff;
+    opacity: 1;
+  }
 

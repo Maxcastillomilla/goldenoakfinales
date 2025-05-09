@@ -16,7 +16,7 @@ let m1 = document.getElementById("m1");
 let m2 = document.getElementById("m2");
 let m3 = document.getElementById("m3");
 let m4 = document.getElementById("m4");
-let m5 = document.getElementById("m5");
+/* let m5 = document.getElementById("m5"); */
 let movil = document.getElementById("fondomovil");
 let nav = document.getElementById("nav");
 /* mouseover */

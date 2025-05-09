@@ -1,0 +1,31 @@
+
+
+.titulomedio2{
+    text-transform: none;
+    color: white;
+    margin: 0;
+    position: relative;
+    max-width: 80vw;
+    left: calc(-50% - 1px );
+    font-weight: 500 !important;
+    font-size: 0.80em;
+}
+.titulomedio {
+    text-transform: uppercase;
+    color: white;
+    /* font-size: 1.3em; */
+    margin: 0;
+    position: relative;
+    text-align: center;
+    left: calc(-50% - 1px );
+    width: 100%;
+}
+
+@media screen and (max-width: 960px) {
+    .titulomedio2{
+
+        font-size: 0.60em;
+        /* left: calc(-40% - 1px ); */
+    }
+}
+
