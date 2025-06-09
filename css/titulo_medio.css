@@ -8,7 +8,7 @@
     max-width: 80vw;
     left: calc(-50% - 1px );
     font-weight: 500 !important;
-    font-size: 0.80em;
+    font-size: 1em;
 }
 .titulomedio {
     text-transform: uppercase;
@@ -22,9 +22,11 @@
 }
 
 @media screen and (max-width: 960px) {
+    
     .titulomedio2{
-
-        font-size: 0.60em;
+        width: 100%;
+        text-align: center;
+        font-size: 1em;
         /* left: calc(-40% - 1px ); */
     }
 }

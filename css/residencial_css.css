@@ -19,11 +19,16 @@
  
    /* Position the tooltip */
    position: absolute;
-   z-index: 1;
-   font-size: 1rem !important;
+   z-index: 99;
+   font-size: 1rem ;
    font-weight: bold;
  }
- 
+
+ .tooltip :hover{
+	font-size: 1.1rem !important;
+}
+
+
 
 
  #verticalmenu{
@@ -44,6 +49,7 @@
    margin-top: 15vh;
    margin-left: 20px;
  }
+ 
 
 
 

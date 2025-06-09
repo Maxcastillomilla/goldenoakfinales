@@ -20,6 +20,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
         <link rel="icon" href="../svg/logonegro.svg">
 
+
+        <style>
+         html, body {
+           margin: 0;
+           padding: 0;
+           height: 100%;
+           scroll-behavior: smooth;
+         }
+     
+         main {
+           height: 100vh;
+           overflow-y: scroll;
+           scroll-snap-type: y mandatory;
+         }
+     
+         section {
+           height: 100vh;
+           scroll-snap-align: start;
+           padding-top: 25px;
+         }
+     
+         main::-webkit-scrollbar { display: none; } /* For Chrome, Safari, and Opera */
+         main { -ms-overflow-style: none; } /* For Internet Explorer and Edge */
+         main { scrollbar-width: none; } /* For Firefox */
+       </style>
+
 </head>
 <body style="background-color: white; overflow-y: hidden;">
 
@@ -27,7 +53,7 @@
    
 
         
-   
+   <main>
 
 
 
@@ -38,7 +64,7 @@
      </div>
 
 
- <div class="lineamedia"></div>
+<!--  <div class="lineamedia"></div> -->
 
 
  <div id="slider">
@@ -71,7 +97,7 @@
                          </h1>
 
                    </div>
-                   <div id="imgsl1"></div>
+                   <div id="imgsl1" class="nuevomedio"></div>
                    
                 
                 </div>
@@ -87,7 +113,7 @@
         <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
      </div>
 
- <div class="lineamedia"></div>
+<!--  <div class="lineamedia"></div> -->
 
 
  <div id="slider">
@@ -124,7 +150,7 @@
 
                      </div>
 
-                     <div style="margin-top: 20px;" id="imgsl2"></div>
+                     <div style="margin-top: 20px;" id="imgsl2" class="nuevomedio"></div>
                    
                 
                 </div>
@@ -140,7 +166,7 @@
         <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
      </div>
 
- <div class="lineamedia"></div>
+ <!-- <div class="lineamedia"></div> -->
 
 
  <div id="slider">
@@ -170,7 +196,7 @@
 
                   </div>
 
-                  <div id="imgsl3"></div>
+                  <div id="imgsl3" class="nuevomedio"></div>
                    
                 
                 </div>
@@ -184,7 +210,7 @@
 
 
 
-
+</main>
     
 
 

@@ -178,5 +178,26 @@
 
     <script src="js/move.js"></script>
     <script src="js/gsapicon.js"></script>
+
+
+
+
+    <script>
+      function addClassById(elementId, className) {
+        const element = document.getElementById(elementId);
+        if (element) {
+          element.classList.add(className);
+        } else {
+          console.error('Element with ID "' + elementId + '" not found.');
+        }
+      }
+    
+      // Example usage with delay:
+      setTimeout(function() {
+        addClassById('nosotrost', 'subractive');
+      }, 1000); // 1000 milliseconds 
+    </script>
+
+    
 </body>
 </html>

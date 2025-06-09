@@ -136,7 +136,7 @@ window.addEventListener('load', function() {
 
 
         gsap.registerPlugin(ScrollTrigger)
-        document.getElementById("rd1").checked = true;
+        
         console.log('inicio')
 
 
@@ -145,7 +145,7 @@ window.addEventListener('load', function() {
         
         
         gsap.registerPlugin(ScrollTrigger)
-        document.getElementById("rd1").checked = true;
+        
         
         
         
@@ -164,16 +164,16 @@ window.addEventListener('load', function() {
                 document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
                 document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
                 document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
-                document.getElementById("rd1").checked = true;
+              
                 agregaruno()
 
                 
                 },
                 onEnterBack: function(){
                     document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
-                document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
-                document.getElementById("rd1").checked = true;
+                    document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
+                    document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
+          
                 agregaruno()
                 /* document.documentElement.style.setProperty('--altura', '24vh'); */
                 },
@@ -189,139 +189,8 @@ window.addEventListener('load', function() {
             
         })
 
-        gsap.to({},{
-            scrollTrigger:{
-                start: "top center",
-                end: "bottom center",
-                makers: false,
-                scroller: 'main',
-                
-                trigger: '#finalprincipio',
-                
-                onEnter: function(){
-                document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
-                document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
-                document.getElementById("rd1").checked = true;
-                agregaruno()
-                operaciont.classList.remove('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.add('subractive');
 
-                
-                },
-                onEnterBack: function(){
-                    document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
-                document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
-                document.getElementById("rd1").checked = true;
-                agregaruno()
-                operaciont.classList.remove('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.add('subractive');
-                /* document.documentElement.style.setProperty('--altura', '24vh'); */
-                },
-                
-            
-                
-        
-                    
-                
-            },
-            duration: 0,
-            
-            
-        })
-
-
-
-
-
-
-
-
-        gsap.to({},{
-            scrollTrigger:{
-                start: "top center",
-                end: "bottom center",
-                makers: true,
-                scroller: 'main',
-                trigger: '#consultoria2',
-                
-                onEnter: function(){
-                    document.getElementById("titulo").innerHTML = "CONSULTORÍA"
-                    document.getElementById("subtitulo").innerHTML = "Potencia la gestión energética de tu empresa, apoyándote en nuestra experiencia y datos objetivos"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/operacion.jpg)"
-                    document.getElementById("rd2").checked = true;
-                    agregaruno()
-                    document.getElementById("nav2").style.display = "none";
-
-                
-                },
-                onEnterBack: function(){
-                    
-                        document.getElementById("titulo").innerHTML = "CONSULTORÍA"
-                        document.getElementById("subtitulo").innerHTML = "Potencia la gestión energética de tu empresa, apoyándote en nuestra experiencia y datos objetivos"
-                        document.getElementById("image").style.backgroundImage = "url(./imagenes/operacion.jpg)"
-                        document.getElementById("rd2").checked = true;
-                        agregaruno()
-                        document.getElementById("nav2").style.display = "none";
-                },
-                
-            
-                
-        
-                    
-                
-            },
-            duration: 0,
-            
-            
-        })
-
-
-
-
-        gsap.to({},{
-            scrollTrigger:{
-                start: "top center",
-                end: "bottom center",
-                makers: false,
-                scroller: 'main',
-                trigger: '#consultoria2final',
-                
-                onEnter: function(){
-                    document.getElementById("titulo").innerHTML = "CONSULTORÍA"
-                    document.getElementById("subtitulo").innerHTML = "Potencia la gestión energética de tu empresa, apoyándote en nuestra experiencia y datos objetivos"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/operacion.jpg)"
-                    document.getElementById("rd2").checked = true;
-                    agregaruno()
-                    document.getElementById("nav2").style.display = "none";
-                
-                },
-                onEnterBack: function(){
-                    document.getElementById("titulo").innerHTML = "CONSULTORÍA"
-                    document.getElementById("subtitulo").innerHTML = "Potencia la gestión energética de tu empresa, apoyándote en nuestra experiencia y datos objetivos"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/operacion.jpg)"
-                    document.getElementById("rd2").checked = true;
-                    agregaruno()
-                    document.getElementById("nav2").style.display = "none";
-                },
-                
-            
-                
-        
-                    
-                
-            },
-            duration: 0,
-            
-            
-        })
-        
-        
-        
-        
+     
         
   
     ///////////////////////
@@ -337,39 +206,7 @@ window.addEventListener('load', function() {
 
         
         
-        gsap.to({},{
-            scrollTrigger:{
-                start: "top center",
-                end: "bottom center",
-                scroller: 'main',
-                trigger: '#electromovilidad2',
-                
-                onEnter: function(){
-                    document.getElementById("titulo").innerHTML = "ELECTROMOVILIDAD"
-                    document.getElementById("subtitulo").innerHTML = "Electrifica tu movimiento y maneja tu empresa hacia un futuro mas limpio y eficiente"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/electroimagen.png)"
-                    
-                    document.getElementById("rd4").checked = true;
-                    
-                    document.getElementById("nav2").style.display = "none";
-                },
-                onEnterBack: function(){
-                    document.getElementById("titulo").innerHTML = "ELECTROMOVILIDAD"
-                    document.getElementById("subtitulo").innerHTML = "Electrifica tu movimiento y maneja tu empresa hacia un futuro mas limpio y eficiente"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/electroimagen.png)"
-                    
-                    document.getElementById("rd4").checked = true;
-                    
-                    document.getElementById("nav2").style.display = "none";
-                    
-                },
-                
-            
-            },
-            duration: 0,
-            
-            
-        })
+
 
 
 

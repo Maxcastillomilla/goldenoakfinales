@@ -71,9 +71,10 @@ background-size: cover;" >
             top: 300px; 
             text-align: center; 
             left: calc(-0.5% - 1px);
-            color: aliceblue;">
+            color: aliceblue;
+            font-weight: 200;">
 
-            Bienvenido a <b>Go Wise</b>, tu plataforma de energía online
+            Bienvenido a <span style="font-weight: 700;">Go Wise</span>, tu plataforma de energía online
 
         </h2>
             <!-- <div>
@@ -104,10 +105,12 @@ background-size: cover;" >
             
             <input type="hidden" name="_next" value="www.goldenoak.cl">
             
-            <input type="submit" value="Entrar al portal" class="form__cta" 
+            <input type="submit" value="Iniciar sesión" class="form__cta" id="submitButton"
             style="background-color: rgba(240, 248, 255, 0.8); color: black; text-align: left !important; padding-left: 18px; border-color: white; ">
             <!-- <a onclick="history.back()"><i class="arrow left"></i>Go Back</a> -->
             <a style="color: aliceblue;">He olvidado mi contraseña</a>
+            <span id="error"></span>
+ <style>#error { color: red; }</style>
         </div>
     </form>
     
@@ -167,6 +170,17 @@ background-size: cover;" >
 <script src='https://cdn.jsdelivr.net/npm/jquery-particles@1.18.3/dist/jquery.particles.min.js'></script><script  src="js/scriptparticle.js"></script>
 
     </body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const submitButton = document.getElementById('submitButton');
+            submitButton.addEventListener('click', function(event) {
+                event.preventDefault(); // Prevent default form submission
+                // You can add your custom logic here, like displaying a message or performing validation
+                const errorSpan = document.getElementById('error');
+                errorSpan.textContent = 'usuario o contraseña incorrectas';
+            });
+        });
+    </script>
     
     
 </html>

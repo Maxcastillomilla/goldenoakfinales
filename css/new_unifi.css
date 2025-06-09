@@ -16,10 +16,10 @@
   height: 340px;
 }
 
-#slider input[type="radio"],
+/* #slider input[type="radio"],
 #verticalmenu input[type="radio"]{
   display: none;
-}
+} */
 
 #slider label {
   cursor: pointer;
@@ -196,7 +196,7 @@
   font-size: 1.2rem !important;
 }
 #celeste h1{
-    font-size: 0.9rem !important;
+    font-size: 1.1rem !important;
 }
 
 #portada {
@@ -241,11 +241,13 @@
   text-align: left;
   line-height: 1rem;
   font-size: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 #titulocuadro1, #titulocuadro2, #titulocuadro3, #titulocuadro4, #titulocuadro5 {
     font-size: 1rem;
 }
-/* .lineatitulo::before {
+.lineatitulo::before {
   content: "";
   width: 40px;
   height: 3px;
@@ -253,7 +255,8 @@
   margin: 0;
   position: absolute;
   left: 0;
-} */
+  /* top: -8px; */
+}
 
 
 
@@ -280,14 +283,14 @@
   content: "";
   position: absolute;
   margin-top: 30px;
-  width: 5px;
+  width: 7px;
   height: 250px;
   background-color: hsla(196, 70%, 64%, 0.718);
   left: calc(50% - 1px);
   transform: translate3d(0, 0, 25px);
   z-index: 25;
 }
-#verticalmenu{
+/* #verticalmenu{
     padding-left: 6px;
     padding-right: 6px;
     padding-top: 10px;
@@ -303,8 +306,8 @@
     margin-top: 15vh;
     margin-left: 20px;
   }
-  
-  #verticalmenu input[type="radio"] {
+   */
+/*   #verticalmenu input[type="radio"] {
     appearance: none;
     background-color: rgb(137, 137, 137);
     margin: 0;
@@ -316,10 +319,10 @@
     border-radius: 50%;
     margin-top: 6px;
     margin-bottom: 6px;
-  }
-  #verticalmenu input:checked {
+  } */
+/*   #verticalmenu input:checked {
     background: rgb(186, 225, 255);
-  }
+  } */
   .space{
     padding-top: calc(40vh);
   }
@@ -368,10 +371,10 @@
   
   
     .partes2 {
-      grid-template-columns: repeat(1, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      display: grid;
-      height: 100%;
+      grid-template-columns: repeat(1, 1fr) !important;
+      grid-template-rows: repeat(2, 1fr) !important;
+      display: grid !important;
+      height: 100% !;
       width: 100%;
     }
 

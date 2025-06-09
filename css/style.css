@@ -1,3 +1,14 @@
+#tooltipesolar:hover{
+    font-size: 2rem;
+    z-index: 99 !important;
+}
+
+iframe::-webkit-scrollbar {
+    display: none;             /* Chrome, Safari */
+  }
+  .nuevomedio {
+    border-left: 7px solid #63c1e3; /* You can replace #000 with your desired color */
+  }
 *{
     box-sizing: border-box;
 }
@@ -22,6 +33,7 @@ a:active {
 }
 
 
+
 html {
     scroll-snap-align: end;
     scroll-behavior: smooth;
@@ -38,6 +50,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 
     background-color: #202020;
+    overflow-x: hidden;
     
     
 }
@@ -46,13 +59,19 @@ body{
     color:white;
   } */
 
-#htmlname{
+/* #htmlname{
 
     font-size: 0.75em !important; 
     padding: 0.5em 0.2em 0.8em 0.5em !important;
 
     width: 80%;
-}
+} */
+.textocuadro, .textocuadro1,.textocuadro3 {
+    text-align: left !important;
+    line-height: 1rem !important;
+    font-size: 1rem !important;
+    font-weight: 500 !important;
+  }
 
 #htmlname{
     background-color: #202020c0;
@@ -764,15 +783,28 @@ animation-name: moveback;
     right: 25px;
     list-style-type: none;
 
-    margin-top: 35px;
+    margin-top: 28px;
     z-index:50;
     -webkit-transform: translate3d(0,0,50px);
     transform: translate3d(0,0,50px);   
-    z-index: 50;
-
-    
-    
+    z-index: 50;    
 }
+
+
+
+#ingresa{
+    position: fixed;
+    right: 180px;
+    list-style-type: none;
+
+    margin-top: 28px;
+    z-index:50;
+    -webkit-transform: translate3d(0,0,50px);
+    transform: translate3d(0,0,50px);   
+    z-index: 50;    
+}
+
+
 
 #conecta{
     position: fixed;
@@ -811,7 +843,7 @@ animation-name: moveback;
     color: white;
 
     margin-top: 16px;
-    background-color: #63c2e42c;
+    /* background-color: #63c2e42c; */
 
 
 }
@@ -1164,10 +1196,10 @@ animation-name: moveback;
     transform-origin: center;
     border-radius: 1.5px;
     transition: 0.5s;
-
-
-
 }
+
+
+
 
 
 .subr:hover:after{
@@ -1635,9 +1667,9 @@ animation-name: moveback;
 
 
 
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: white;
-    font-size: 2.2em;
+    font-size: 1rem !important;
     
     margin: 0;
     position: relative;
@@ -1645,6 +1677,7 @@ animation-name: moveback;
     padding-left: 8px;
 
     width: fit-content;
+    font-weight: 200;
     
     
 }
@@ -1694,7 +1727,7 @@ animation-name: moveback;
 
 .piepagina{
     color: black;
-    font-size: 0.6em;
+    font-size: 0.8em;
     
     margin: 0;
     position: relative;
@@ -1707,6 +1740,7 @@ animation-name: moveback;
     top:calc(50% - 0.25em );
 
     position: left;
+    font-weight: 200;
     
     
 }
@@ -2873,8 +2907,8 @@ padding-top: 10px;
   padding: .8em 1em;
   outline: none;  
   border: none;
-  border: 1px solid black;
-  border-radius: 0.2em;
+  border: 3px solid black;
+  border-radius: 10px;
 }
 
 .form__service{
@@ -2908,7 +2942,7 @@ padding-top: 10px;
 
   border: none;
   padding: .7em 0;
-  border-radius: .2em;
+  border-radius: 10px;
   cursor: pointer;
   color: white;
 }
@@ -2960,10 +2994,26 @@ padding-top: 10px;
 
 
 
+.subr{
+    font-size: 1em !important;
+}
+
+
+@media screen and (max-width: 1100px) {
+
+    .textocuadro, .textocuadro1,.textocuadro3 {
+      
+        font-size: 1rem !important;
+        padding-left: 0px !important;
+        width: 100% !important;
+          
+      
+      }
+
+      section
 
 
 
-@media screen and (max-width: 960px) {
     .mid{
         padding-top: 135px
     }
@@ -2974,7 +3024,7 @@ padding-top: 10px;
         
 
         position: absolute;
-        top: 35vh; 
+        top: calc(40vh - 1.2em); 
         font-size: 10px;
         
         min-width: 100vw;
@@ -3023,7 +3073,7 @@ padding-top: 10px;
     
       max-width: 100px;
 
-      font-size: 10px !important;
+      /* font-size: 10px !important; */
       
     }
 
@@ -3039,7 +3089,7 @@ padding-top: 10px;
 
     .textoiconos{
        
-        font-size: 0.7em;
+        font-size: 0.85em !important;
          
     }
     #subcli{
@@ -3050,26 +3100,26 @@ padding-top: 10px;
 
     .textcenter7 {
         
-        font-size: 3.3vw;
+        font-size: 1rem;
    
     }
 
     .textcenter2 {
         
-        font-size: 2.2vw;
+        font-size: 1rem;
    
     }
     
 
 
 
-    #htmlname{
+    /* #htmlname{
 
         font-size: 0.6em !important;
 
         left: 15px;
     
-    }
+    } */
 
     #redes2{
     
@@ -3108,7 +3158,7 @@ padding-top: 10px;
         display: none;
     }
 
-    #contacta{
+    #contacta, #ingresa{
         display: none;
     }
     #lideres2{
@@ -3155,13 +3205,14 @@ padding-top: 10px;
     }
 
     #lideres2 span{
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
 
     .lideressvg{
         width: 33%;
         padding: auto;
+        max-height: 120px;
     }
 
 
@@ -3235,12 +3286,13 @@ padding-top: 10px;
     }
 
     .slid{
-        font-size: 0.8em;
+        font-size: 1em;
+        margin-left: 0px;
         
     }
     
     .slii{
-        font-size: 0.8em;
+        font-size: 1em;
         margin-left: 30px;
        
     }
@@ -3370,7 +3422,7 @@ z-index: 25;
     
 .piepagina{
     
-    font-size: 0.4em;
+    font-size: 0.75em;
     
     
     
@@ -3440,7 +3492,7 @@ padding-top: 10px;
 .formcliente{
     
     grid-column-start: 2 ;
-    grid-column-end: 6 ;
+    grid-column-end: 8 ;
 }
 
 

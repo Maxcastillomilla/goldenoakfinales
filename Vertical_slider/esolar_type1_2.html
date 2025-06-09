@@ -1,202 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         
-    
-      <link rel="stylesheet" href="../css/Imagensliders.css">
-      <link rel="stylesheet" href="../css/new_unifi.css">
-      <title>GoldenOak</title>
-         <link rel="stylesheet" href="../css/style.css">
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
-      
-         <link rel="preconnect" href="https://fonts.googleapis.com">
-         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
-         <link rel="icon" href="../svg/logonegro.svg">
+  <title>GoldenOak</title>
+  <link rel="stylesheet" href="../css/Imagensliders.css">
+  <link rel="stylesheet" href="../css/new_unifi.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../svg/logonegro.svg">
 
-   </head>
-   <body style="background-color: white; overflow-y: hidden;">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
 
-      
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      scroll-behavior: smooth;
+    }
 
-         
-   
+    main {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
 
+    section {
+      height: 100vh;
+      scroll-snap-align: start;
+      padding-top: 25px;
+    }
 
-      <section>
+    main::-webkit-scrollbar { display: none; } /* For Chrome, Safari, and Opera */
+    main { -ms-overflow-style: none; } /* For Internet Explorer and Edge */
+    main { scrollbar-width: none; } /* For Firefox */
+  </style>
+</head>
 
-         <div id="celeste">
-            <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
-         </div>
-   
-      <div class="lineamedia"></div>
-   
-   
+<body style="background-color: white;">
+
+  <main>
+    <section>
+      <div id="celeste">
+        <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
+      </div>
+      <!-- <div class="lineamedia"></div> -->
       <div id="slider">
-         
-      
-         <div id="slides">
-            <div id="overflow">
-               <div class="inner">
-                  <div class="slide slide_2 ">
-                     <div id="slide_2" class="slide-content partes2">
-   
-                        <div>
-                           
-                        <h1 id="titulocuadro" >Asesoría</h1>
-   
-   
-   
-                           <!--  <div>
-                                 <div class="lineatitulo"  ></div>
-                           </div> -->
-   
-   
-                              <h1 style="padding-top: 20px; padding-left: 10px; width: 90%;" class="textocuadro" >Desarrollamos soluciones a la medida de nuestros clientes, combinando
-                                 expertise técnica con visión de negocio.
-                                 <br><br>
-                                 Estudiamos tu contexto energético global, considerando múltiples br
-                                 empalmes y perfil de consumo, analizamos superficies disponibles y
-                                 tomamos en consideración tus objetivos de negocio, todo esto para
-                                 proponerte un sistema de generación solar hecho a tu medida.
-                                 
-                                 <br><br>
-                                 Nuestro trabajo es que las soluciones estándar no existan.
-   
-                                    
-                                 </h1>
-   
-                           </div>
-                           <div id="imgsl5"></div>
-                        
-                     
-                     </div>
-         </div>
-      </section>
-   
-   
-   
-      <section>
-   
-         <div id="celeste">
-            <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
-         </div>
-   
-      <div class="lineamedia"></div>
-   
-   
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_2 ">
+                <div id="slide_2" class="slide-content partes2">
+                  <div>
+                    <h1 id="titulocuadro">Asesoría</h1>
+                    <div><div class="lineatitulo"></div></div>
+                    <h1 style="padding-top: 20px; padding-left: 10px; width: 90%;" class="textocuadro">
+                      Desarrollamos soluciones a la medida de nuestros clientes, combinando expertise técnica con visión de negocio.
+                      <br><br>
+                      Estudiamos tu contexto energético global, considerando múltiples empalmes y perfil de consumo, analizamos superficies disponibles y tomamos en consideración tus objetivos de negocio, todo esto para proponerte un sistema de generación solar hecho a tu medida.
+                      <br><br>
+                      Nuestro trabajo es que las soluciones estándar no existan.
+                    </h1>
+                  </div>
+                  <div class="nuevomedio" id="imgsl5"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section>
+      <div id="celeste">
+        <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
+      </div>
+      <!-- <div class="lineamedia"></div> -->
       <div id="slider">
-         
-      
-         <div id="slides">
-            <div id="overflow">
-               <div class="inner">
-                  <div class="slide slide_2 ">
-                     <div id="slide_2" class="slide-content partes2">
-   
-                        <div>
-                           
-                        <h1 id="titulocuadro" >Diseño e ingeniería</h1>
-   
-   
-   
-                        <!-- <div>
-                           <div class="lineatitulo"  ></div>
-                        </div> -->
-   
-   
-                        <h1 style="padding-top: 20px;  width: 90%; padding-left: 10px;" class="textocuadro" >
-                           Diseñamos cada detalle de tu sistema solar, preocúpanos por su
-                           eficiencia, calidad, estética y practicidad.
-                           <br><br>
-                           Desarrollamos ingeniería bajo los mas altos estándares, asegurándonos de
-                           un total cumplimento de la normativa eléctrica y de los requerimientos de
-                           instalación de fabricantes.
-                           <br><br>
-                           Innovamos con soluciones técnicas que permiten extender los alcances de
-                           nuestros sistemas solares y mejorar su eficiencia
-   
-                           
-                                    
-                           </h1>
-   
-                     </div>
-   
-                     <div style="margin-top: 20px;" id="imgsl6"></div>
-                        
-                     
-                     </div>
-         </div>
-      </section>
-   
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_2 ">
+                <div id="slide_2" class="slide-content partes2">
+                  <div>
+                    <h1 id="titulocuadro">Diseño e ingeniería</h1>
+                    <div><div class="lineatitulo"></div></div>
+                    <h1 style="padding-top: 20px; width: 90%; padding-left: 10px;" class="textocuadro">
+                      Diseñamos cada detalle de tu sistema solar, preocupándonos por su eficiencia, calidad, estética y practicidad.
+                      <br><br>
+                      Desarrollamos ingeniería bajo los más altos estándares, asegurándonos del cumplimiento de la normativa eléctrica y los requerimientos de instalación.
+                      <br><br>
+                      Innovamos con soluciones técnicas que extienden los alcances de nuestros sistemas y mejoran su eficiencia.
+                    </h1>
+                  </div>
+                  <div style="margin-top: 20px;" class="nuevomedio" id="imgsl6"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
 
-
-      <section>
-   
-         <div id="celeste">
-            <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
-         </div>
-   
-      <div class="lineamedia"></div>
-   
-   
+    <section>
+      <div id="celeste">
+        <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
+      </div>
+      <!-- <div class="lineamedia"></div> -->
       <div id="slider">
-         
-      
-         <div id="slides">
-            <div id="overflow">
-               <div class="inner">
-                  <div class="slide slide_2 ">
-                     <div id="slide_2" class="slide-content partes2">
-   
-                        <div>
-                           
-                        <h1 id="titulocuadro" >Construcción</h1>
-   
-   
-   
-                        <!-- <div>
-                           <div class="lineatitulo"  ></div>
-                        </div> -->
-   
-   
-                        <h1 style="padding-top: 20px;  width: 90%; padding-left: 10px;" class="textocuadro" >
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_2 ">
+                <div id="slide_2" class="slide-content partes2">
+                  <div>
+                    <h1 id="titulocuadro">Construcción</h1>
+                    <div><div class="lineatitulo"></div></div>
+                    <h1 style="padding-top: 20px; width: 90%; padding-left: 10px;" class="textocuadro">
+                      Construimos tu sistema solar bajo los más altos estándares de seguridad y calidad.
+                      <br><br>
+                      Contamos con personal propio calificado por GoldenOak para asegurar una implementación libre de inconvenientes.
+                      <br><br>
+                      Fiscalizamos cada etapa de la construcción para asegurar que cada componente refleje fielmente las directrices de ingeniería.
+                    </h1>
+                  </div>
+                  <div style="margin-top: 20px;"  class="nuevomedio" id="imgsl7"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+  </main>
 
-                           Construimos tu sistema solar bajo los mas altos estándares de seguridad y
-                           calidad. <br><br>
-                           Contamos con personal propio calificado por GoldenOak para asegurar
-                           una implementación libre de inconvenientes. <br><br>
-                           Fiscalizamos cada etapa de la construcción para asegurarnos que cada
-                           componente instalado refleja de manera fiel las directrices de ingeniería
-   
-                           
-                                    
-                           </h1>
-   
-                     </div>
-   
-                     <div style="margin-top: 20px;" id="imgsl7"></div>
-                        
-                     
-                     </div>
-         </div>
-      </section>
-   
-
-
-
-
-
-
-
-      
-
-
-   </body>
-   </html>
+</body>
+</html>

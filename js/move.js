@@ -84,18 +84,20 @@ m3.addEventListener("mouseover", () =>
    
     
 }) 
+
+
 m4.addEventListener("mouseover", () =>
 {
     movil.style.opacity = 1
     op = getElementTopLeft("fondomovil").left
     root.style.setProperty('--star', op + "px");
     movil.style.animation = 'none';
-    movil.offsetHeight; /* trigger reflow */
+    movil.offsetHeight; 
     movil.style.animation = null; 
     var TopLeft = getElementTopLeft("m4");
-    /* TopLeft.left */
+    TopLeft.left
     root.style.setProperty('--final', TopLeft.left + "px");
-   /*  console.log(root.style.getPropertyValue('--final')) */
+    console.log(root.style.getPropertyValue('--final'))
 
    movil.style.top = TopLeft.top + "px"
    
@@ -103,24 +105,24 @@ m4.addEventListener("mouseover", () =>
     
 }) 
 
-m5.addEventListener("mouseover", () =>
+/* m5.addEventListener("mouseover", () =>
     {
         movil.style.opacity = 1
         op = getElementTopLeft("fondomovil").left
         root.style.setProperty('--star', op + "px");
         movil.style.animation = 'none';
-        movil.offsetHeight; /* trigger reflow */
+        movil.offsetHeight; 
         movil.style.animation = null; 
         var TopLeft = getElementTopLeft("m5");
-        /* TopLeft.left */
+       
         root.style.setProperty('--final', TopLeft.left + "px");
-       /*  console.log(root.style.getPropertyValue('--final')) */
+       
     
        movil.style.top = TopLeft.top + "px"
        
         
         
-    }) 
+    })  */
 
 
 nav.addEventListener("mouseout", () =>{

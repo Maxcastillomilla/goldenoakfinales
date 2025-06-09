@@ -1,46 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <link rel="stylesheet" href="css/residencial_css.css">
-    <title>GoldenOak</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/titulo_medio.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> 
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GoldenOak</title>
+  <link rel="stylesheet" href="../css/Imagensliders.css">
+ <!--  <link rel="stylesheet" href="../css/new_unifi.css"> -->
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../svg/logonegro.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/titulo_medio.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/esolar_css.css">
+
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      scroll-behavior: smooth;
+    }
+
+    main {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      z-index: -99;
+    }
+
+    section {
+      height: 100vh !important;
+      scroll-snap-align: end;
+      /* padding-top: 25px; */
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding-bottom: 75px;
+    }
+
+    main::-webkit-scrollbar { display: none; } /* For Chrome, Safari, and Opera */
+    main { -ms-overflow-style: none; } /* For Internet Explorer and Edge */
+    main { scrollbar-width: none; } /* For Firefox */
+
+
+
+
     
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet"> 
-        <link rel="icon" href="./svg/logonegro.svg">
+  </style>
+</head>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-        
-        
-
-        </head>
-        <body style="background-color: white; -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */  scroll-behavior: smooth; " class="container y mandatory-scroll-snapping" >
-<script src="./js/header.js"></script>
+<body style="background-color: white; overflow-y: hidden;">
 
 
 
-    
+   <div id="verticalmenu" >
+      <div>
+          <div class="tooltip pc" onClick="window.location='#principio'">
+              <p class="tooltiptext" style="min-width: max-content;">Energía Solar</p>
+          </div>
+          <input  type="radio" name="user_level" id="rd1" value="1" onClick="window.location='#principio'" title="Energía Solar"></input>
+      </div>
+      
+      
+   
+      <!-- <div>
+          <div class="tooltip pc">
+              <p class="tooltiptext" style="min-width: max-content;">Operación y Mantenimiento</p>
+          </div>
+          <input type="radio" name="user_level" id="rd3" value="3" onClick="window.location='#solarservice2'" title="Operación y Mantenimiento"/>
+      </div> -->
+   
+      <div>
+          <div class="tooltip pc" onClick="window.location='#electromovilidad2'">
+              <p class="tooltiptext" style="min-width: max-content;">Electromovilidad</p>
+          </div>
+          <input type="radio" name="user_level" id="rd4" value="4"  onClick="window.location='#electromovilidad2'" title="Electromovilidad"/>
+      </div>
+   </div>  
 
-    
+
+   <script src="./js/header.js"></script>
 
 
 
 
 
 
-   <div id="portada" style="position: fixed;" >
-      <div id="image">
+
+
+   <div id="portada" style="position: fixed;"  >
+      <div id="image2">
 
 
 
@@ -49,23 +106,72 @@
          <div class="texto pr">
 
 
-            <div class="mid" style="padding-top: 130px">
+            <div class="mid" style="padding-top: 120px">
             
                 <h1 id="titulo" class="titulomedio achicar">ENERGÍA SOLAR</h1>
                 <div class="linehcentro" ></div>
 
-                <h1 id="subtitulo" class="titulomedio2" style="padding-top: 35px;"  > 
+                <h1 id="subtitulo" class="titulomedio2" style="padding-top: 20px; "  >Suma a tu empresa al combate contra el cambio climático y
+                  disminuye tu gasto eléctrico en el proceso
 
             
             </h1>
+
+            <!-- //menu 2 -->
+
+            <div class="" id="nav2">
+                <ul id="opmenu" style="
+                margin-top: 10px;
+            ">
+                    <div class="fade" id="" ></div>
+                   <!--  <li id="logomaster" class="logoblanco" style="margin-right: 14px;"><img style="cursor: pointer;"  src = "./logoblanco.svg" onclick="location.reload()" alt="GOLDENOAK"/></li> -->                
+                    <!-- <div class="mcontenido">
+                        <a href="">Energía Solar</a>
+                        <a href="">Electromovilidad</a>
+                        
+                    </div> -->
+        
+
+                        
+                                    
+                
+                
+                </li>
+                  
+                  <!-- <li id="contacta" class="borde" ><a  style="
+                    padding-bottom: 10px;
+                    padding-top: 10px;
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    max-width: 200px !important;
+                " href="./contacto.html">COTIZA AQUÍ</a></li> -->
+                </ul>
+            </div>
+
+
+
+        </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 
             
             
             </div>
 
 
-
-        </div> 
+            
 
 
 
@@ -79,90 +185,357 @@
 
 
 
-  
+
+   
    
 
 
-    <div id="solar2" class="space2"  >
-        <iframe onload='resizeIframe(this)' id="solar"  src="Vertical_slider/R_energiaS.html" style="width: 100%;  height: 410px;" frameborder="0"></iframe>
-    </div>
 
 
-    
-    <div id="movil2" class="space">
-        <iframe onload='resizeIframe(this)' id="movil"  src="Vertical_slider/R_electromovilidad.html" style="width: 100%;  height: 430px;" frameborder="0"></iframe>
-    </div >
-    
 
 
-    <div id="verticalmenu">
 
 
-        <div>
-            <div class="tooltip pc">
-                <p class="tooltiptext" style="min-width: max-content;">Energía Solar</p>
+
+
+
+
+
+
+  <main>
+    <section id="principio">
+      <div id="celeste">
+        <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important; padding-left: 15px;">SERVICIOS</h1>
+      </div>
+      
+      <div id="slider">
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_2 ">
+                <div id="slide_2" class="slide-content partes2">
+                  <div>
+                    <h1 id="titulocuadro">Asesoría</h1>
+                    <div><div class="lineatitulo"></div></div>
+                    <h1 style="padding-top: 20px; padding-left: 10px; width: 90%;" class="textocuadro">
+                      Desarrollamos soluciones a la medida de tu hogar.
+                      <br>
+                      <br>
+                      Estudiamos tu consumo energético, analizamos la mejor superficie de
+                      instalación y consideramos tus objetivos de ahorro y respaldo eléctrico,
+                      para proponerte un sistema de generación óptimo desde el punto de vista
+                      de eficiencia y estético.
+                      <br>
+                      <br>
+                      Nuestro trabajo es que las soluciones estándar no existan.
+                    </h1>
+                  </div>
+                  <div class="nuevomedio" id="imgsl5"></div>
+                </div>
+              </div>
             </div>
-            <input  type="radio" name="user_level" id="rd1" value="1" onClick="window.location='#solar2'" title="Energía Solar"/>
+          </div>
         </div>
+    </section>
 
-        <div>
-            <div class="tooltip pc">
-                <p class="tooltiptext" style="min-width: max-content;">Consultoría</p>
+    <section>
+      <div id="celeste">
+      </div>
+      <div id="slider">
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_2 ">
+                <div id="slide_2" class="slide-content partes2">
+                  <div>
+                    <h1 id="titulocuadro">Ingeniería</h1>
+                    <div><div class="lineatitulo"></div></div>
+                    <h1 style="padding-top: 20px; width: 90%; padding-left: 10px;" class="textocuadro">
+                      Diseñamos cada detalle de tu sistema solar bajo los mas altos estándares
+                      de ingeniería, asegurándonos de un total cumplimento de la normativa
+                      eléctrica y de los requerimientos de instalación de fabricantes.
+                      <br>
+                      <br>
+                      Te acompañamos durante todo el proceso de conexión, obteniendo
+                      certificación SEC de la instalación y gestionando la conexión final con la
+                      compañía distribuidora.
+                      <br>
+                      Nuestro trabajo no finaliza hasta que tu hogar se encuentra generando su
+                      propia energía.
+                    </h1>
+                  </div>
+                  <div style="margin-top: 20px;" class="nuevomedio" id="imgsl6"></div>
+                </div>
+              </div>
             </div>
-            <input type="radio" name="user_level" id="rd2" onClick="window.location='#movil2'" title="Consultoría"/>
+          </div>
         </div>
+    </section>
 
-
-
-
-
-
-
-
+    <section id="#finalprincipio">
+      <div id="celeste">
        
-        
+      </div>
+      
+      <div id="slider">
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_2 ">
+                <div id="slide_2" class="slide-content partes2">
+                  <div>
+                    <h1 id="titulocuadro">Instalación</h1>
+                    <div><div class="lineatitulo"></div></div>
+                    <h1 style="padding-top: 20px; width: 90%; padding-left: 10px;" class="textocuadro">
+                      Instalamos tu sistema solar bajo los mas altos estándares de seguridad y
+                      calidad.
+                      <br>
+                      <br>
+                      Contamos con personal propio calificado por GoldenOak para asegurar
+                      una implementación libre de inconvenientes.
+                      <br>
+                      <br>
+                      Fiscalizamos cada etapa de la construcción para asegurarnos que cada
+                      componente instalado refleja de manera fiel las directrices de ingeniería.
+                    </h1>
+                  </div>
+                  <div style="margin-top: 20px;"  class="nuevomedio" id="imgsl7"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+    </section>
+
+
+
+
+
+
+
+     
+
+
+
+
+
+
+
+<section style="margin-top: 100px;"  id="electromovilidad2">
+
+    <div id="celeste">
+<!--         <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
+ -->     </div>
+
+
+
+
+
+ <div id="slider">
+
+
+    <div id="slides">
+       <div id="overflow">
+          <div class="inner">
+             <div class="slide slide_1 ">
+                <div id="slide1" class="slide-content partes2">
+
+                    <div>
+
+                        <h1 id="titulocuadro" >Asesoría
+                        </h1>
+
+
+
+                        <div><div class="lineatitulo"></div></div>
+
+
+                        <h1 style="padding-top: 20px;  width: 90%;" class="textocuadro" >
+                          Te acompañamos en la selección de la mejor opción de carga vehicular
+                          para tu hogar.
+                          <br>
+                          <br>
+                          Tomamos en cuenta variables como cantidad de vehículos a cargar, marca
+                          y modelo de los vehículos, tiempo promedio de permanencia estacionado
+                          y capacidad de tu empalme eléctrico.
+                           </h1>
+
+                     </div>
+                     <div id="imgsl1" class="nuevomedio"></div>
+
+
+                  </div>
+    </div>
+</section>
+
+
+
+
+<section>
+
+    <div id="celeste">
+<!--         <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
+ -->     </div>
+
+
+
+
+ <div id="slider">
+
+
+    <div id="slides">
+       <div id="overflow">
+          <div class="inner">
+             <div class="slide slide_2 ">
+                <div id="slide_2" class="slide-content partes2">
+
+                  <div>
+
+                     <h1 id="titulocuadro" >Ingeniería</h1>
+
+
+
+                     <div><div class="lineatitulo"></div></div>
+
+
+                     <h1 style="padding-top: 20px;  width: 90%; padding-left: 10px;" class="textocuadro" >
+                      Diseñamos cada detalle de tu sistema de carga bajo los mas altos
+                      estándares de ingeniería, asegurándonos de un total cumplimento de la
+                      normativa eléctrica y de los requerimientos de instalación de fabricantes.
+                      <br>
+                      <br>
+                      Tramitamos la certificación SEC de tu sistema de carga, garantizando una
+                      instalación segura.
+                        </h1>
+
+                  </div>
+
+                  <div style="margin-top: 20px;" id="imgsl2" class="nuevomedio"></div>
+
+
+               </div>
+    </div>
+</section>
+
+
+
+
+<section id="consultoria2final">
+
+    <div id="celeste">
+<!--         <h1 id="textceleste" style="font-size: 1.2rem; line-height: 40px; color: #63c1e3 !important;">SERVICIOS</h1>
+ -->     </div>
+
+
+
+
+ <div id="slider">
+
+
+    <div id="slides">
+       <div id="overflow">
+          <div class="inner">
+             <div class="slide slide_2 ">
+                <div id="slide_2" class="slide-content partes2">
+
+                  <div>
+
+                     <h1 id="titulocuadro" >Instalación</h1>
+
+
+
+                     <div><div class="lineatitulo"></div></div>
+
+
+                     <h1 style="padding-top: 20px;  width: 90%; padding-left: 10px;" class="textocuadro" >
+                        Contamos personal propio, altamente capacitado, para instalar tu solución
+                        de carga bajo los mas altos estándares de seguridad y calidad.
+                        <br>
+                        <br>
+                        De esta forma velamos por una conexión y operación libre de
+                        inconvenientes.
+
+                        </h1>
+
+                  </div>
+
+
+                  <div id="imgsl3" class="nuevomedio"></div>
+
+
+               </div>
+    </div>
+</section>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+
+  
+
+
+
+   <script src="js/footer.js" defer></script>
    
 
 
 
 
+<!--  <script src="./move.js"></script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+<script src="js/check-esolar.js"></script>
+
+<script src="./js/GSDevTools.min.js"></script>
+
+
+<script src="js/scrollempresa.js"></script>
+<script src="js/gsapresidencial.js"></script>
+<script src="js/move.js"></script>
 
 
 
-
-
-
-
-
-
-
-   
-
-
-        <script src="js/footer.js" defer></script>
-        
-    
-   <!--  <script src="./move.js"></script> -->
-   <script type="text/javascript">
-    function resizeIframe(obj){
-       obj.style.height = 0;
-       obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+<script>
+  function addClassById(elementId, className) {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.classList.add(className);
+    } else {
+      console.error('Element with ID "' + elementId + '" not found.');
     }
-  </script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-   <script src="./check-esolar.js"></script>
-    <script src="./js/scrollempresa.js"></script>
-    <script src="./js/gsapre.js"></script>
-    <script src="./js/residencial.html"></script>
-    <script src="./js/move.js"></script>
-    <script src="./js/js/GSDevTools.min.js"></script>
+  }
+
+  // Example usage with delay:
+  setTimeout(function() {
+    addClassById('residencialt', 'subractive');
+  }, 1000); // 1000 milliseconds 
+</script>
 
 
-    
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>

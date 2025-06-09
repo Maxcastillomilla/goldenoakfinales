@@ -74,13 +74,14 @@ let items = `
 
       <li  class="titulomenu"><a class="subr" href="#financiamento" id="financiamientot" >FINANCIAMIENTO</a></li>   
     `;
-    elementnav.innerHTML = items
+    /* elementnav.innerHTML = items */
 
 
 
 
 const agregaruno = ()=>{
-    document.getElementById("nav2").style.display = "block";
+    console.log('')
+    /* document.getElementById("nav2").style.display = "block";
 
    
 
@@ -105,7 +106,7 @@ generaciont.addEventListener('click', () => {
     financiamientot.classList.add('subractive');
     generaciont.classList.remove('subractive');
     operaciont.classList.remove('subractive');
-  });
+  }); */
 
 }
 
@@ -131,7 +132,7 @@ const agregartres = ()=>{
 window.addEventListener('load', function() {
     console.log('La página ha terminado de cargarse!!');
 
-        agregaruno()
+        /* agregaruno() */
 
 
 
@@ -145,7 +146,7 @@ window.addEventListener('load', function() {
         
         
         gsap.registerPlugin(ScrollTrigger)
-        document.getElementById("rd1").checked = true;
+        
         
         
         
@@ -162,20 +163,20 @@ window.addEventListener('load', function() {
                 
                 onEnter: function(){
                 document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
-                document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
+                document.getElementById("subtitulo").innerHTML = "Impulsa tu hogar hacia el futuro y disminuye tu gasto eléctrico generando tu propia energía"
+                document.getElementById("image2").style.backgroundImage = "url(./imagenes/casa.jpg)"
                 document.getElementById("rd1").checked = true;
-                agregaruno()
+                
 
                 
                 },
                 onEnterBack: function(){
-                    document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
-                document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
-                document.getElementById("rd1").checked = true;
-                agregaruno()
-                /* document.documentElement.style.setProperty('--altura', '24vh'); */
+                    
+                        document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
+                        document.getElementById("subtitulo").innerHTML = "Impulsa tu hogar hacia el futuro y disminuye tu gasto eléctrico generando tu propia energía"
+                        document.getElementById("image2").style.backgroundImage = "url(./imagenes/casa.jpg)"
+                        document.getElementById("rd1").checked = true;
+                        
                 },
                 
             
@@ -199,26 +200,20 @@ window.addEventListener('load', function() {
                 trigger: '#finalprincipio',
                 
                 onEnter: function(){
-                document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
-                document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
-                document.getElementById("rd1").checked = true;
-                agregaruno()
-                operaciont.classList.remove('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.add('subractive');
+                    document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
+                    document.getElementById("subtitulo").innerHTML = "Impulsa tu hogar hacia el futuro y disminuye tu gasto eléctrico generando tu propia energía"
+                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/casa.jpg)"
+                    document.getElementById("rd1").checked = true;
+                
 
                 
                 },
                 onEnterBack: function(){
                     document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
-                document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
-                document.getElementById("rd1").checked = true;
-                agregaruno()
-                operaciont.classList.remove('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.add('subractive');
+                    document.getElementById("subtitulo").innerHTML = "Impulsa tu hogar hacia el futuro y disminuye tu gasto eléctrico generando tu propia energía"
+                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/casa.jpg)"
+                    document.getElementById("rd1").checked = true;
+                
                 /* document.documentElement.style.setProperty('--altura', '24vh'); */
                 },
                 
@@ -234,94 +229,6 @@ window.addEventListener('load', function() {
         })
 
 
-
-
-
-
-
-
-        gsap.to({},{
-            scrollTrigger:{
-                start: "top center",
-                end: "bottom center",
-                makers: true,
-                scroller: 'main',
-                trigger: '#consultoria2',
-                
-                onEnter: function(){
-                    document.getElementById("titulo").innerHTML = "CONSULTORÍA"
-                    document.getElementById("subtitulo").innerHTML = "Potencia la gestión energética de tu empresa, apoyándote en nuestra experiencia y datos objetivos"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/operacion.jpg)"
-                    document.getElementById("rd2").checked = true;
-                    agregaruno()
-                    document.getElementById("nav2").style.display = "none";
-
-                
-                },
-                onEnterBack: function(){
-                    
-                        document.getElementById("titulo").innerHTML = "CONSULTORÍA"
-                        document.getElementById("subtitulo").innerHTML = "Potencia la gestión energética de tu empresa, apoyándote en nuestra experiencia y datos objetivos"
-                        document.getElementById("image").style.backgroundImage = "url(./imagenes/operacion.jpg)"
-                        document.getElementById("rd2").checked = true;
-                        agregaruno()
-                        document.getElementById("nav2").style.display = "none";
-                },
-                
-            
-                
-        
-                    
-                
-            },
-            duration: 0,
-            
-            
-        })
-
-
-
-
-        gsap.to({},{
-            scrollTrigger:{
-                start: "top center",
-                end: "bottom center",
-                makers: false,
-                scroller: 'main',
-                trigger: '#consultoria2final',
-                
-                onEnter: function(){
-                    document.getElementById("titulo").innerHTML = "CONSULTORÍA"
-                    document.getElementById("subtitulo").innerHTML = "Potencia la gestión energética de tu empresa, apoyándote en nuestra experiencia y datos objetivos"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/operacion.jpg)"
-                    document.getElementById("rd2").checked = true;
-                    agregaruno()
-                    document.getElementById("nav2").style.display = "none";
-                
-                },
-                onEnterBack: function(){
-                    document.getElementById("titulo").innerHTML = "CONSULTORÍA"
-                    document.getElementById("subtitulo").innerHTML = "Potencia la gestión energética de tu empresa, apoyándote en nuestra experiencia y datos objetivos"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/operacion.jpg)"
-                    document.getElementById("rd2").checked = true;
-                    agregaruno()
-                    document.getElementById("nav2").style.display = "none";
-                },
-                
-            
-                
-        
-                    
-                
-            },
-            duration: 0,
-            
-            
-        })
-        
-        
-        
-        
         
   
     ///////////////////////
@@ -347,7 +254,7 @@ window.addEventListener('load', function() {
                 onEnter: function(){
                     document.getElementById("titulo").innerHTML = "ELECTROMOVILIDAD"
                     document.getElementById("subtitulo").innerHTML = "Electrifica tu movimiento y maneja tu empresa hacia un futuro mas limpio y eficiente"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/electroimagen.png)"
+                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/electroimagen.png)"
                     
                     document.getElementById("rd4").checked = true;
                     
@@ -356,7 +263,7 @@ window.addEventListener('load', function() {
                 onEnterBack: function(){
                     document.getElementById("titulo").innerHTML = "ELECTROMOVILIDAD"
                     document.getElementById("subtitulo").innerHTML = "Electrifica tu movimiento y maneja tu empresa hacia un futuro mas limpio y eficiente"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/electroimagen.png)"
+                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/electroimagen.png)"
                     
                     document.getElementById("rd4").checked = true;
                     
@@ -388,17 +295,12 @@ window.addEventListener('load', function() {
             trigger: '#principio',
             
             onEnter: function(){
-                generaciont.classList.add('subractive');
-                operaciont.classList.remove('subractive');
-                financiamientot.classList.remove('subractive');
+                
                 
                 
             },
             onEnterBack: function(){
-                generaciont.classList.add('subractive');
-                operaciont.classList.remove('subractive');
-                financiamientot.classList.remove('subractive');
-                document.getElementById("nav2").style.display = "none";
+                
             
                 
             },
@@ -410,7 +312,7 @@ window.addEventListener('load', function() {
         
     })
 
-    gsap.to({},{
+    /* gsap.to({},{
         scrollTrigger:{
             start: "top center",
             end: "bottom center",
@@ -418,18 +320,12 @@ window.addEventListener('load', function() {
             trigger: '#finalgeneracion',
             
             onEnter: function(){
-                generaciont.classList.add('subractive');
-                operaciont.classList.remove('subractive');
-                financiamientot.classList.remove('subractive');
                 
-               /*  document.getElementById("nav2").style.display = "none"; */
+                document.getElementById("rd1").checked = true;
+              
             },
             onEnterBack: function(){
-                generaciont.classList.add('subractive');
-                operaciont.classList.remove('subractive');
-                financiamientot.classList.remove('subractive');
-                
-               /*  document.getElementById("nav2").style.display = "none"; */
+                document.getElementById("rd1").checked = true;
                 
             },
             
@@ -438,7 +334,7 @@ window.addEventListener('load', function() {
         duration: 0,
         
         
-    })
+    }) */
 
 
 
@@ -456,16 +352,12 @@ window.addEventListener('load', function() {
             trigger: '#operacion',
             
             onEnter: function(){
-                operaciont.classList.add('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.remove('subractive');
+                
                 
                 
             },
             onEnterBack: function(){
-                operaciont.classList.add('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.remove('subractive');
+                
                 
             
                 
@@ -487,16 +379,11 @@ window.addEventListener('load', function() {
             trigger: '#finaloperacion',
             
             onEnter: function(){
-                operaciont.classList.add('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.remove('subractive');
+                
                 
                 
             },
             onEnterBack: function(){
-                operaciont.classList.add('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.remove('subractive');
                 
             
                 
@@ -541,16 +428,12 @@ window.addEventListener('load', function() {
             trigger: '#financiamento',
             
             onEnter: function(){
-                operaciont.classList.remove('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.add('subractive');
+                
                 
                 
             },
             onEnterBack: function(){
-                operaciont.classList.remove('subractive');
-                generaciont.classList.remove('subractive');
-                financiamientot.classList.add('subractive');
+                
                 
             
                 
@@ -604,9 +487,11 @@ window.addEventListener('load', function() {
 
  */
 
+      const rd4 = document.getElementById("rd4")
 
-
-
+      rd4.addEventListener('click', () => {
+        document.getElementById("rd4").checked = true;
+      });
 
 
 
@@ -614,6 +499,11 @@ window.addEventListener('load', function() {
 
 
 });
+const rd4 = document.getElementById("rd4")
+
+      rd4.addEventListener('click', () => {
+        document.getElementById("rd4").checked = true;
+      });
 
 
 
