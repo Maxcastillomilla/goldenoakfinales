@@ -3491,8 +3491,8 @@ padding-top: 10px;
 
 .formcliente{
     
-    grid-column-start: 2 ;
-    grid-column-end: 8 ;
+    grid-column-start: 1 !important ;
+    grid-column-end: 10 !important ;
 }
 
 

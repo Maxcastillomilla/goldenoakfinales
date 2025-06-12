@@ -537,7 +537,7 @@
 }
 
 #imgsl1{
-   background-image: url(/imagenes/es01.png);
+   background-image: url(./imagenes/es01.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
@@ -547,7 +547,7 @@
 #imgsl2{
 
    
-   background-image: url(/imagenes/es02.png);
+   background-image: url(./imagenes/es02.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
@@ -557,7 +557,7 @@
 #imgsl3{
 
    
-   background-image: url(/imagenes/es03.png);
+   background-image: url(./imagenes/es03.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
@@ -567,7 +567,7 @@
 #imgsl4{
 
    
-   background-image: url(/imagenes/es04.png);
+   background-image: url(./imagenes/es04.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
@@ -577,7 +577,7 @@
 #imgsl5{
 
    
-   background-image: url(/imagenes/es05.png);
+   background-image: url(./imagenes/es05.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
@@ -588,7 +588,7 @@
 #imgsl6{
 
    
-   background-image: url(/imagenes/es06.png);
+   background-image: url(./imagenes/es06.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
@@ -596,7 +596,7 @@
 }
 
 #imgsl7{
-   background-image: url(/imagenes/es07.png);
+   background-image: url(./imagenes/es07.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
@@ -604,7 +604,7 @@
 }
 
 #imgsl8{
-   background-image: url(/imagenes/es08.png);
+   background-image: url(./imagenes/es08.png);
    background-repeat: no-repeat;
    background-position: center;
    background-size: 90%;
