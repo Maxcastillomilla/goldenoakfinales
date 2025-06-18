@@ -57,24 +57,30 @@
 <div id="clientesform"  class="margen " style="
 background-color: white; height: 100vb; 
 background-image: url(./imagenes/1.JPG) !important; 
-background-position: center;
+background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imagenes/1.JPG) !important; background-position: center;
 background-size: cover;" >
     
-    <form style="padding-top: 370px; padding-bottom: 350px;    ;" class="formcliente inputblanco" id="form"  action="https://formsubmit.co/contacto@goldenoak.cl"
+    <form     class="formcliente inputblanco esapcioinicio" id="form"  action="https://formsubmit.co/contacto@goldenoak.cl"
     method="POST">
     
-        <div class="form__container">
+ <div class="form__container" style="position: relative;">
             <h2 class="form__tittle"  
             style="margin-bottom: 0px; 
-            width: 100%; 
+         
            
-            top: 300px; 
+            position: absolute;
+            
             text-align: center; 
-            left: calc(-0.5% - 1px);
+           
             color: aliceblue;
-            font-weight: 200;">
+            font-weight: 200;
+            font-size: 2.5em;
+            
+            ">
+           
+            
 
-            Bienvenido a <span style="font-weight: 700;">Go Wise</span>, tu plataforma de energía online
+            Bienvenido a <span style="font-weight: 700;">Go&nbsp;Wise</span>, tu plataforma de energía online
 
         </h2>
             <!-- <div>
@@ -85,17 +91,19 @@ background-size: cover;" >
 
             
             <input style="
-            background-color: rgba(240, 248, 255, 0);
+            margin-top: 150px;
+            
              color: black;
              border-color: white;"
-             type="email" class="form__input" placeholder="Usuario" name="_replyto"
+             type="email" class="form__input2" placeholder="Usuario" name="_replyto"
              style="
             background-color: rgba(240, 248, 255, 0);
              color: black;
-             border-color: white;">
-            <input type="password" class="form__input" placeholder="Contraseña" name="_replyto"
+             border-color: white;
+             ">
+            <input type="password" class="form__input2" placeholder="Contraseña" name="_replyto"
             style="
-            background-color: rgba(240, 248, 255, 0);
+            
              color: black;
              border-color: white;
              text-align: left; "
@@ -108,8 +116,8 @@ background-size: cover;" >
             <input type="submit" value="Iniciar sesión" class="form__cta" id="submitButton"
             style="background-color: rgba(240, 248, 255, 0.8); color: black; text-align: left !important; padding-left: 18px; border-color: white; ">
             <!-- <a onclick="history.back()"><i class="arrow left"></i>Go Back</a> -->
-            <a style="color: aliceblue;">He olvidado mi contraseña</a>
-            <span id="error"></span>
+            <a id="olvidar" style="color: aliceblue; padding-left: 18px;">He olvidado mi contraseña</a>
+            <span id="error" style="padding-left: 18px;"></span>
  <style>#error { color: red; }</style>
         </div>
     </form>
@@ -180,6 +188,11 @@ background-size: cover;" >
                 errorSpan.textContent = 'usuario o contraseña incorrectas';
             });
         });
+
+        document.getElementById('olvidar').addEventListener('click', function() {
+            window.location.reload();
+        });
+
     </script>
     
     

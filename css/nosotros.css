@@ -50,11 +50,13 @@
    
    background-color: white;
    height: 40px;
-   width: 95%;
+   width: 100%;
    margin: auto;
    margin-top: 30px;
+   
 
    color:  #63c1e3b7;
+   padding-left: 15px;
 }
 
 
@@ -190,7 +192,7 @@
 
 
 .espacio{
-   padding: 5%;
+   padding: 15px;
 }
 
 

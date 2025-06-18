@@ -1,3 +1,32 @@
+input {
+    all: unset;
+    
+}
+.iconnosotros {
+    width: 35%;
+    aspect-ratio: 1 / 1; /* Maintains 1:1 aspect ratio */
+    /* No animation applied here initially */
+}
+
+.iconnosotros:hover {
+    animation: rotate-on-hover 1s ease-in-out infinite alternate; /* Loop animation infinitely on hover */
+}
+
+@keyframes rotate-on-hover {
+    0% {
+        transform: rotate(0deg); /* Start with no rotation */
+    }
+    25% {
+        transform: rotate(-10deg); /* Rotate 10 degrees to the left */
+    }
+    75% {
+        transform: rotate(10deg); /* Rotate 10 degrees to the right */
+    }
+    100% {
+        transform: rotate(0deg); /* Return to no rotation */
+    }
+}
+
 #tooltipesolar:hover{
     font-size: 2rem;
     z-index: 99 !important;
@@ -130,12 +159,12 @@ body{
 
 
 .conttitulo{
-    font-size: 0.8em;
+    font-size: 1em;
     color: #202020;
     
 }
 .contcont{
-    font-size: 0.8em;
+    font-size: 1em;
     color:#939393 ; 
 }
 
@@ -274,7 +303,7 @@ body{
       grid-template-columns: 35% 65%;
       /* grid-template-rows: repeat(2   , 1fr); */
     
-      font-size: 70%;
+      font-size: 1em;
       
       width: 100%;
     color: #2b7e97;
@@ -459,7 +488,7 @@ body{
 
     
     color: #202020;
-    font-size: 1.3vw;
+    font-size: 1rem;
     margin: 0px;
     font-weight: 800;
     min-width: 50%;
@@ -480,7 +509,7 @@ body{
     margin: 0px;
     padding-top:0px;
     color: #202020;
-    font-size: 0.8vw;
+    font-size: 0.75rem;
     font-weight: 200;
 }
 
@@ -505,7 +534,7 @@ body{
 
 
 .lideressvg{
-    width: 55%;
+    width: 40%;
     padding: auto;
 }
 
@@ -797,13 +826,31 @@ animation-name: moveback;
     right: 180px;
     list-style-type: none;
 
-    margin-top: 28px;
+    margin-top: 16px !important;
     z-index:50;
     -webkit-transform: translate3d(0,0,50px);
     transform: translate3d(0,0,50px);   
-    z-index: 50;    
+    z-index: 50;   
+    
+    
+
+    /* border: 2px solid #ffffff; */
+    border-radius: 10px;
+
+   
+    padding: 8px;
+    /* padding-top: 10px; */
+   /*  padding-bottom: 10px; */
+    list-style-type: none; 
+    color: white;
+
+    margin-top: 10px;
+    transition: 0.25s ease-out;
 }
 
+#ingresa:hover {
+    background-color: #63c1e3;
+}
 
 
 #conecta{
@@ -1783,6 +1830,11 @@ animation-name: moveback;
     left:calc(50%); 
     padding-top: 235px
 }
+.mid2{
+    position: absolute;
+    left:calc(50%); 
+    padding-top: 235px
+}
 
 .iz{
     position: absolute;
@@ -2352,7 +2404,18 @@ animation-name: moveback;
     height: 100%;
     background: rgba(255, 255, 255, 0.1);
     transition: all 1s ease;
-  }
+}
+#submitButton:hover {
+ transform: scale(1.01);
+ transition: transform 0.2s ease;
+}
+
+#olvidar:hover {
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+  
   .boton:hover:before {
   width: 100%;
   }
@@ -2420,7 +2483,9 @@ animation-name: moveback;
 
 
 
-
+.esapcioinicio{
+    padding-top: 250px !important;
+}
 
 
 
@@ -2868,7 +2933,7 @@ padding-top: 10px;
 } 
 
 .formcliente {
-    display: grid;
+   /*  display: grid; */
     grid-column-start: 3;
     grid-column-end: 7;
  
@@ -2907,9 +2972,19 @@ padding-top: 10px;
   padding: .8em 1em;
   outline: none;  
   border: none;
-  border: 3px solid black;
+  border: 1px solid black;
   border-radius: 10px;
 }
+.form__input2{
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding:  1em;
+    outline: none;  
+    border: none;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: #edeeed25;
+  }
 
 .form__service{
     font-family: 'Lato', sans-serif;
@@ -2933,6 +3008,11 @@ padding-top: 10px;
     border-radius: 0.2em;
     background-color: white;
   }
+
+  .form__tittle{
+    margin-left: -20%;
+    width: 140%;
+}
 
 
 .form__cta{
@@ -3016,6 +3096,9 @@ padding-top: 10px;
 
     .mid{
         padding-top: 135px
+    }
+    .mid2{
+        padding-top: 75px
     }
   
 
@@ -3207,6 +3290,9 @@ padding-top: 10px;
     #lideres2 span{
         font-size: 2em;
     }
+    .esapcioinicio{
+        padding-top: 180px !important;
+    }
 
 
     .lideressvg{
@@ -3218,7 +3304,7 @@ padding-top: 10px;
 
     .counter{
         font-weight: 800;
-        font-size: 17px;
+        /* font-size: 2em; */
         color: #2b7e97;
     }
     .odometer {
@@ -3260,7 +3346,11 @@ padding-top: 10px;
         max-width: 80%;
         
     }
-
+    .form__tittle{
+        width: 100%;
+        margin-left: 0%;
+        margin-top: -50px;
+    }
     .form2 {
 
         grid-column-start: 1;

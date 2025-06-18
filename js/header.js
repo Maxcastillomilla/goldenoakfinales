@@ -22,21 +22,10 @@ function createHeader() {
 
 
   <li id="ingresa" >
-    <a 
-    style="
-    padding-bottom: 10px;
-    padding-top: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-    
-    margin-left: 20px;
-    max-width: 200px !important;
-    color: white;
-  "
-    
+    <a    
     href="./Portalclientes.html" style="display: flex; align-items: center; vertical-align: middle;">
       <!-- <span style="display: flex; align-items: center; vertical-align: middle;"> -->
-      <span style="padding-left: 12px;">Portal Clientes</span>
+      <span style="padding-left: 12px; color: white;">Portal Clientes</span>
 <img id="contactIcon" src="./svg/user-circle.svg" alt="Icon" style="width: 1.7em; height: 1.7em; vertical-align: middle; margin: 0 0 0 5px; padding-top: 0px !important;">
       </span>
     </a>

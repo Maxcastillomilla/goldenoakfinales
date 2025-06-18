@@ -441,8 +441,8 @@
     background-repeat: no-repeat;
    
     min-height: var(--altura);
-    transition: 0.7s;
-   transition-duration: 0.7s;
+    /* transition: 0.7s;
+   transition-duration: 0.7s; */
  }
 
  #image:before {
@@ -456,8 +456,8 @@
    /* max-width: fit-content; */
    height: var(--altura);;
 
-   transition: 0.7s;
-   transition-duration: 0.7s;
+   /* transition: 0.7s;
+   transition-duration: 0.7s; */
 }
 
 #image2{

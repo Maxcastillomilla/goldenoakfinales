@@ -10,6 +10,16 @@
     font-weight: 500 !important;
     font-size: 1em;
 }
+.titulomedio3{
+    text-transform: none;
+    color: white;
+    margin: 0;
+    position: relative;
+    max-width: 80vw;
+    left: calc(-50% - 1px );
+    font-weight: 500 !important;
+    font-size: 1em;
+}
 .titulomedio {
     text-transform: uppercase;
     color: white;
@@ -28,6 +38,12 @@
         text-align: center;
         font-size: 1em;
         /* left: calc(-40% - 1px ); */
+    }
+    .titulomedio3{
+        min-width: 75vw;
+        text-align: center;
+        font-size: 0.9em;
+        left: calc(-50% - 1px );
     }
 }
 
