@@ -7,11 +7,18 @@ input {
     aspect-ratio: 1 / 1; /* Maintains 1:1 aspect ratio */
     /* No animation applied here initially */
 }
+.iconnosotros2 {
+    width: 45%;
+    aspect-ratio: 1 / 1; /* Maintains 1:1 aspect ratio */
+    /* No animation applied here initially */
+}
 
 .iconnosotros:hover {
     animation: rotate-on-hover 1s ease-in-out infinite alternate; /* Loop animation infinitely on hover */
 }
-
+.iconnosotros2:hover {
+    animation: rotate-on-hover 1s ease-in-out infinite alternate; /* Loop animation infinitely on hover */
+}
 @keyframes rotate-on-hover {
     0% {
         transform: rotate(0deg); /* Start with no rotation */

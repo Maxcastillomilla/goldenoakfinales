@@ -164,7 +164,7 @@ window.addEventListener('load', function() {
                 onEnter: function(){
                 document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
                 document.getElementById("subtitulo").innerHTML = "Impulsa tu hogar hacia el futuro y disminuye tu gasto eléctrico generando tu propia energía"
-                document.getElementById("image2").style.backgroundImage = "url(./imagenes/casa.jpg)"
+                document.getElementById("image2").style.backgroundImage = "url(./imagenes/02_01A.jpg)"
                 document.getElementById("rd1").checked = true;
                 
 
@@ -174,7 +174,7 @@ window.addEventListener('load', function() {
                     
                         document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
                         document.getElementById("subtitulo").innerHTML = "Impulsa tu hogar hacia el futuro y disminuye tu gasto eléctrico generando tu propia energía"
-                        document.getElementById("image2").style.backgroundImage = "url(./imagenes/casa.jpg)"
+                        document.getElementById("image2").style.backgroundImage = "url(./imagenes/02_01A.jpg)"
                         document.getElementById("rd1").checked = true;
                         
                 },
@@ -202,7 +202,7 @@ window.addEventListener('load', function() {
                 onEnter: function(){
                     document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
                     document.getElementById("subtitulo").innerHTML = "Impulsa tu hogar hacia el futuro y disminuye tu gasto eléctrico generando tu propia energía"
-                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/casa.jpg)"
+                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/02_01A.jpg)"
                     document.getElementById("rd1").checked = true;
                 
 
@@ -211,7 +211,7 @@ window.addEventListener('load', function() {
                 onEnterBack: function(){
                     document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
                     document.getElementById("subtitulo").innerHTML = "Impulsa tu hogar hacia el futuro y disminuye tu gasto eléctrico generando tu propia energía"
-                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/casa.jpg)"
+                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/02_01A.jpg)"
                     document.getElementById("rd1").checked = true;
                 
                 /* document.documentElement.style.setProperty('--altura', '24vh'); */
@@ -246,15 +246,14 @@ window.addEventListener('load', function() {
         
         gsap.to({},{
             scrollTrigger:{
-                start: "top center",
-                end: "bottom center",
+                
                 scroller: 'main',
                 trigger: '#electromovilidad2',
                 
                 onEnter: function(){
                     document.getElementById("titulo").innerHTML = "ELECTROMOVILIDAD"
                     document.getElementById("subtitulo").innerHTML = "Electrifica tu movimiento y maneja tu empresa hacia un futuro mas limpio y eficiente"
-                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/electroimagen.png)"
+                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/02_02.jpg)"
                     
                     document.getElementById("rd4").checked = true;
                     
@@ -263,7 +262,7 @@ window.addEventListener('load', function() {
                 onEnterBack: function(){
                     document.getElementById("titulo").innerHTML = "ELECTROMOVILIDAD"
                     document.getElementById("subtitulo").innerHTML = "Electrifica tu movimiento y maneja tu empresa hacia un futuro mas limpio y eficiente"
-                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/electroimagen.png)"
+                    document.getElementById("image2").style.backgroundImage = "url(./imagenes/02_02.jpg)"
                     
                     document.getElementById("rd4").checked = true;
                     

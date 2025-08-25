@@ -153,8 +153,8 @@ window.addEventListener('load', function() {
         
         gsap.to({},{
             scrollTrigger:{
-                start: "top center",
-                end: "bottom center",
+                /* start: "top center",
+                end: "bottom center", */
                 makers: false,
                 scroller: 'main',
                 
@@ -163,7 +163,7 @@ window.addEventListener('load', function() {
                 onEnter: function(){
                 document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
                 document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
+                document.getElementById("image3").style.backgroundImage = "url(./imagenes/03_01.jpg)"
               
                 agregaruno()
 
@@ -172,7 +172,7 @@ window.addEventListener('load', function() {
                 onEnterBack: function(){
                     document.getElementById("titulo").innerHTML = "ENERGÍA SOLAR"
                     document.getElementById("subtitulo").innerHTML = "Suma a tu empresa al combate contra el cambio climático y disminuye tu gasto eléctrico en el proceso"
-                    document.getElementById("image").style.backgroundImage = "url(./imagenes/esportada.jpg)"
+                    document.getElementById("image3").style.backgroundImage = "url(./imagenes/03_01.jpg)"
           
                 agregaruno()
                 /* document.documentElement.style.setProperty('--altura', '24vh'); */
@@ -372,8 +372,8 @@ window.addEventListener('load', function() {
 
     gsap.to({},{
         scrollTrigger:{
-            start: "top center",
-            end: "bottom center",
+            /* start: "top center",
+            end: "bottom center", */
             scroller: 'main',
             trigger: '#financiamento',
             
